@@ -1,0 +1,46 @@
+@media (pointer: fine){
+    #navbar_user_visibility div:hover{
+        color: #ffffff;
+        background-color: #8605ff;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+    #socialsection div:nth-child(1):hover{
+        background-color: #1877f2;
+        box-shadow: #1877f2 0px 0px 10px 0px;
+        transition: all 0.2s ease-in-out;
+        border: 1.5px solid #2c2c2c00;
+    }
+    #socialsection div:nth-child(2):hover{
+        background-color: #08a0e9;
+        box-shadow: #08a0e9 0px 0px 10px 0px;
+        transition: all 0.2s ease-in-out;
+        border: 1.5px solid #2c2c2c00;
+    }
+    #socialsection div:nth-child(3):hover{
+        background-color: #ea4c89;
+        box-shadow: #ea4c89 0px 0px 10px 0px;
+        transition: all 0.2s ease-in-out;
+        border: 1.5px solid #2c2c2c00;
+    }
+    #user_linksnav div:hover{
+        color: #8605ff;
+        transition: color 0.2s ease-in-out;
+    }
+    #user_linksnav div::after{
+        content: '';
+        display: flex;
+        width: 0%;
+        height: 2px;
+        background-color: #8605ff;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+    }
+    #user_linksnav div:hover::after{
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+    #user_linknavmenuicon:hover{
+        border: 1px solid #0000000e;
+    }
+}

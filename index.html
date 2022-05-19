@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nextasset/screenhoveronly.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <link rel="stylesheet" href="nextasset/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>PT 1-4</title>
+</head>
+<body style="overflow-x: hidden;"> 
+    <div class="user_home_container">
+        <div id="user_navbar_usable" style="z-index: 8; padding: 20px; width: 100%; height: 100px; display: flex; justify-content: space-between; align-items: center; flex-direction: row; background-color: #ffffff; position: fixed; top:0; box-shadow: #00000036 0px 0px 10px 0px;">
+            <div style="font-family: Plus Jakarta Sans, sans-serif; font-size: 30px; font-weight: 800; color: #000000">Miles <span style="color: #8605ff;">Abatayo</span></div>
+            <div id="user_linksnav">
+                <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinghome()">Home</div>
+                <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkingabout()">About</div>
+                <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinghobbies()">Hobbies</div>
+                <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinggames()">Games</div>
+                <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkingsocials()">Socials</div>
+            </div>
+            <div id="user_linknavmenuicon" onclick="minimizedham()">
+                <span class="material-symbols-rounded" id="user_ham_icon" style="color: #000000">
+                    menu
+                </span>
+            </div>
+        </div>
+        <div id="navbar_user_visibility" style="display: none;">
+            <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinghome()">Home</div>
+            <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkingabout()">About</div>
+            <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinghobbies()">Hobbies</div>
+            <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkinggames()">Games</div>
+            <div style="font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600;" onclick="navbarlinkingsocials()">Socials</div>
+        </div>
+        <section id="homesect">
+            <div id="textcenter">Well Hello And<br><span>Welcome!</span></div>
+        </section>
+        <section id="aboutsect" style="flex-direction: column; text-align: start; line-height: 34px; position: relative;">
+            <span class="bgtextgiga">ABOUT</span>
+            <div id="texttopsection2" style="margin-bottom: 40px; font-family: Poppins, sans-serif; font-size: 40px; font-weight: 700;">So, who am <span style="font-size: 40px; color: #8605ff;">I?</span></div>
+            <hr id="dividerhr"/>
+            <div id="descriptionabout">
+                Hello and my name is <span style="font-weight: 600; color: #8605ff;">Miles Cedrick M. Abatayo</span> And I am a highschool student is <span style="font-weight: 600; color: #8605ff;">Don Bosco Technical College, Cebu</span>.<br>My school is situated in <span style="font-weight: 600; color: #8605ff;">Philippines, Metro Cebu</span>.
+                I am <span style="font-weight: 600; color: #8605ff;">15 years old</span>, and still in grade 9 but soon grade 10.<br>I am very curious, and sometimes lazy. I take my time to make the best as is can<br>
+                with the things im intrested in.
+            </div>
+        </section>
+        <section id="hobbiessect" style="flex-direction: column; text-align: start; line-height: 34px; position: relative;">
+            <span class="bgtextgiga">HOBBIES</span>
+            <div id="texttopsection3" style="margin-bottom: 40px; font-family: Poppins, sans-serif; font-size: 40px; font-weight: 700;">Well, what do I <span style="font-size: 40px; color: #8605ff;">Do?</span></div>
+            <hr id="dividerhr"/>
+            <div id="descriptionhobbies">
+                Well, I do have many hobbies. One of which is <span style="font-weight: 600; color: #8605ff;">Coding or Computer Works</span>. I really like making games for <span style="font-weight: 600; color: #8605ff;">Roblox</span>.<br>I like making <span style="font-weight: 600; color: #8605ff;">Art</span>, especially <span style="font-weight: 600; color: #8605ff;">Graphic Designs</span>.
+                I am also a <span style="font-weight: 600; color: #8605ff;">Fish Keeper</span>. I already have <span style="font-weight: 600; color: #8605ff;">4 Tanks</span> in my house.<br>And I am so obsessed with animals, me and my family recently got <span style="font-weight: 600; color: #8605ff;">2 Hamsters</span>.<br>I still have more to say,
+                but i don't think it is going to fit in this section.
+            </div>
+        </section>
+        <section id="gamessect" style="background-color: #000000; flex-direction: column; position: relative;">
+            <span class="bgtextgiga2">GAMES</span>
+            <div id="texttopsection4" style=" color: #ffffff; margin-bottom: 40px; font-family: Poppins, sans-serif; font-size: 50px; font-weight: 700; line-height: 60px;">Okay, now what Games <br><span style="font-size: 60px; color: #8605ff;">Do I play?</span></div>
+            <div id="gamesection">
+                <div>
+                    <span>
+                        <span id="imgroblox"></span>
+                    </span>
+                    <span >
+                        Roblox
+                        <span>68% of what I play</span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <span id="imggeometry"></span>
+                    </span>
+                    <span >
+                        Geometry Dash
+                        <span>12% of what I play</span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <span id="imgcodm"></span>
+                    </span>
+                    <span >
+                        CODM
+                        <span>10% of what I play</span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <span id="imgminecraft"></span>
+                    </span>
+                    <span >
+                        Minecraft
+                        <span>10% of what I play</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="socialssect" style="background-color: #000000; flex-direction: column; position: relative;">
+            <span class="bgtextgiga2">SOCIALS</span>
+            <div id="texttopsection5" style=" color: #ffffff; margin-bottom: 40px; font-family: Poppins, sans-serif; font-size: 50px; font-weight: 700; line-height: 60px;">Great! But, where can you <br><span style="font-size: 60px; color: #8605ff;">Find Me?</span></div>
+            <div id="socialsection" style="user-select: none; cursor: pointer; color: #ffffff; font-size: 30px; font-weight: 600; margin-top: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <div data-linking="https://www.facebook.com/miles.abatayo.52" onclick="openlinks(this)">Facebook</div>
+                <div data-linking="https://www.roblox.com/users/1293247332/profile" onclick="openlinks(this)">Roblox</div>
+                <div data-linking="">Dribbble</div>
+            </div>
+        </section>
+    </div>
+    <div id="containwarning_user">
+        <div id="userverify_u3x_developer">
+            <div id="revokedimg"></div>
+            <p>Landscape Unavailable</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-direction: row; margin-top: 30px;"> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="JS/uixfunctions.js"></script>
+<script src="data-cache-JS/data-storagevalues.JS"></script>
+</html>
